@@ -1,0 +1,7 @@
+Ensure you set the valid architectures on both the project and netfunctional_snmp target to 
+armv6 and armv7.  Failure to do so will still build okay, but when you package your application
+for the app store, it'll bitch because the armv6 portion of the library (libnetfunctionalsnmp.a) is 
+missing, and only contains the armv7 and i386 portions.
+
+
+

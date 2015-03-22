@@ -1,0 +1,17 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 0.5
+description: NetFuctional.SNMP
+author: NetFunctional Inc.
+license: See LICENSE
+copyright: Copyright (c) 2012 NetFunctional
+
+
+# these should not be edited
+name: netfunctional_snmp
+moduleid: netfunctional.snmp
+guid: 3034b812-22d6-4fed-a384-2db99ee85bab
+platform: iphone
+minsdk: 1.7.0.RC1

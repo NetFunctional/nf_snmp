@@ -1,0 +1,1097 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		24416B8111C4CA220047AFDD /* Build & Test */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 24416B8A11C4CA520047AFDD /* Build configuration list for PBXAggregateTarget "Build & Test" */;
+			buildPhases = (
+				24416B8011C4CA220047AFDD /* ShellScript */,
+			);
+			dependencies = (
+				24416B8511C4CA280047AFDD /* PBXTargetDependency */,
+			);
+			name = "Build & Test";
+			productName = "Build & test";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		043815AA14214C3B00974B41 /* NetfunctionalSnmpSnmpClientProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815A814214C3B00974B41 /* NetfunctionalSnmpSnmpClientProxy.h */; };
+		043815AB14214C3B00974B41 /* NetfunctionalSnmpSnmpClientProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 043815A914214C3B00974B41 /* NetfunctionalSnmpSnmpClientProxy.m */; };
+		043815AE14214C9400974B41 /* netsnmp_adapter.c in Sources */ = {isa = PBXBuildFile; fileRef = 043815AD14214C9400974B41 /* netsnmp_adapter.c */; };
+		043815B514214CAC00974B41 /* libnetsnmp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 043815B014214CAC00974B41 /* libnetsnmp.a */; };
+		043815B614214CAC00974B41 /* libnetsnmpagent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 043815B114214CAC00974B41 /* libnetsnmpagent.a */; };
+		043815B714214CAC00974B41 /* libnetsnmphelpers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 043815B214214CAC00974B41 /* libnetsnmphelpers.a */; };
+		043815B814214CAC00974B41 /* libnetsnmpmibs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 043815B314214CAC00974B41 /* libnetsnmpmibs.a */; };
+		043815B914214CAC00974B41 /* libnetsnmptrapd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 043815B414214CAC00974B41 /* libnetsnmptrapd.a */; };
+		0438166414214CB100974B41 /* agent_callbacks.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815BD14214CB100974B41 /* agent_callbacks.h */; };
+		0438166514214CB100974B41 /* agent_handler.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815BE14214CB100974B41 /* agent_handler.h */; };
+		0438166614214CB100974B41 /* agent_index.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815BF14214CB100974B41 /* agent_index.h */; };
+		0438166714214CB100974B41 /* agent_module_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815C014214CB100974B41 /* agent_module_config.h */; };
+		0438166814214CB100974B41 /* agent_read_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815C114214CB100974B41 /* agent_read_config.h */; };
+		0438166914214CB100974B41 /* agent_registry.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815C214214CB100974B41 /* agent_registry.h */; };
+		0438166A14214CB100974B41 /* agent_sysORTable.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815C314214CB100974B41 /* agent_sysORTable.h */; };
+		0438166B14214CB100974B41 /* agent_trap.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815C414214CB100974B41 /* agent_trap.h */; };
+		0438166C14214CB100974B41 /* all_helpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815C514214CB100974B41 /* all_helpers.h */; };
+		0438166D14214CB100974B41 /* auto_nlist.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815C614214CB100974B41 /* auto_nlist.h */; };
+		0438166E14214CB100974B41 /* baby_steps.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815C714214CB100974B41 /* baby_steps.h */; };
+		0438166F14214CB100974B41 /* bulk_to_next.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815C814214CB100974B41 /* bulk_to_next.h */; };
+		0438167014214CB100974B41 /* cache_handler.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815C914214CB100974B41 /* cache_handler.h */; };
+		0438167114214CB100974B41 /* debug_handler.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815CA14214CB100974B41 /* debug_handler.h */; };
+		0438167214214CB100974B41 /* ds_agent.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815CB14214CB100974B41 /* ds_agent.h */; };
+		0438167314214CB100974B41 /* instance.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815CC14214CB100974B41 /* instance.h */; };
+		0438167414214CB100974B41 /* mfd.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815CD14214CB100974B41 /* mfd.h */; };
+		0438167514214CB100974B41 /* mib_module_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815CE14214CB100974B41 /* mib_module_config.h */; };
+		0438167614214CB100974B41 /* mib_module_includes.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815CF14214CB100974B41 /* mib_module_includes.h */; };
+		0438167714214CB100974B41 /* mib_modules.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815D014214CB100974B41 /* mib_modules.h */; };
+		0438167814214CB100974B41 /* mode_end_call.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815D114214CB100974B41 /* mode_end_call.h */; };
+		0438167914214CB100974B41 /* multiplexer.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815D214214CB100974B41 /* multiplexer.h */; };
+		0438167A14214CB100974B41 /* net-snmp-agent-includes.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815D314214CB100974B41 /* net-snmp-agent-includes.h */; };
+		0438167B14214CB100974B41 /* null.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815D414214CB100974B41 /* null.h */; };
+		0438167C14214CB100974B41 /* old_api.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815D514214CB100974B41 /* old_api.h */; };
+		0438167D14214CB100974B41 /* read_only.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815D614214CB100974B41 /* read_only.h */; };
+		0438167E14214CB100974B41 /* row_merge.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815D714214CB100974B41 /* row_merge.h */; };
+		0438167F14214CB100974B41 /* scalar.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815D814214CB100974B41 /* scalar.h */; };
+		0438168014214CB100974B41 /* scalar_group.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815D914214CB100974B41 /* scalar_group.h */; };
+		0438168114214CB100974B41 /* serialize.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815DA14214CB100974B41 /* serialize.h */; };
+		0438168214214CB100974B41 /* set_helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815DB14214CB100974B41 /* set_helper.h */; };
+		0438168314214CB100974B41 /* snmp_agent.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815DC14214CB100974B41 /* snmp_agent.h */; };
+		0438168414214CB100974B41 /* snmp_get_statistic.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815DD14214CB100974B41 /* snmp_get_statistic.h */; };
+		0438168514214CB100974B41 /* snmp_vars.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815DE14214CB100974B41 /* snmp_vars.h */; };
+		0438168614214CB100974B41 /* stash_cache.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815DF14214CB100974B41 /* stash_cache.h */; };
+		0438168714214CB100974B41 /* stash_to_next.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815E014214CB100974B41 /* stash_to_next.h */; };
+		0438168814214CB100974B41 /* sysORTable.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815E114214CB100974B41 /* sysORTable.h */; };
+		0438168914214CB100974B41 /* table.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815E214214CB100974B41 /* table.h */; };
+		0438168A14214CB100974B41 /* table_array.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815E314214CB100974B41 /* table_array.h */; };
+		0438168B14214CB100974B41 /* table_container.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815E414214CB100974B41 /* table_container.h */; };
+		0438168C14214CB100974B41 /* table_data.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815E514214CB100974B41 /* table_data.h */; };
+		0438168D14214CB100974B41 /* table_dataset.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815E614214CB100974B41 /* table_dataset.h */; };
+		0438168E14214CB100974B41 /* table_iterator.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815E714214CB100974B41 /* table_iterator.h */; };
+		0438168F14214CB100974B41 /* table_tdata.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815E814214CB100974B41 /* table_tdata.h */; };
+		0438169014214CB100974B41 /* util_funcs.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815E914214CB100974B41 /* util_funcs.h */; };
+		0438169114214CB100974B41 /* var_struct.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815EA14214CB100974B41 /* var_struct.h */; };
+		0438169214214CB100974B41 /* watcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815EB14214CB100974B41 /* watcher.h */; };
+		0438169314214CB100974B41 /* config_api.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815EC14214CB100974B41 /* config_api.h */; };
+		0438169414214CB100974B41 /* definitions.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815ED14214CB100974B41 /* definitions.h */; };
+		0438169514214CB100974B41 /* asn1.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815EF14214CB100974B41 /* asn1.h */; };
+		0438169614214CB100974B41 /* callback.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815F014214CB100974B41 /* callback.h */; };
+		0438169714214CB100974B41 /* cert_util.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815F114214CB100974B41 /* cert_util.h */; };
+		0438169814214CB100974B41 /* check_varbind.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815F214214CB100974B41 /* check_varbind.h */; };
+		0438169914214CB100974B41 /* cmu_compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815F314214CB100974B41 /* cmu_compat.h */; };
+		0438169A14214CB100974B41 /* container.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815F414214CB100974B41 /* container.h */; };
+		0438169B14214CB100974B41 /* container_binary_array.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815F514214CB100974B41 /* container_binary_array.h */; };
+		0438169C14214CB100974B41 /* container_iterator.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815F614214CB100974B41 /* container_iterator.h */; };
+		0438169D14214CB100974B41 /* container_list_ssll.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815F714214CB100974B41 /* container_list_ssll.h */; };
+		0438169E14214CB100974B41 /* container_null.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815F814214CB100974B41 /* container_null.h */; };
+		0438169F14214CB100974B41 /* data_list.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815F914214CB100974B41 /* data_list.h */; };
+		043816A014214CB100974B41 /* default_store.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815FA14214CB100974B41 /* default_store.h */; };
+		043816A114214CB100974B41 /* dir_utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815FB14214CB100974B41 /* dir_utils.h */; };
+		043816A214214CB100974B41 /* factory.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815FC14214CB100974B41 /* factory.h */; };
+		043816A314214CB100974B41 /* fd_event_manager.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815FD14214CB100974B41 /* fd_event_manager.h */; };
+		043816A414214CB100974B41 /* file_utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815FE14214CB100974B41 /* file_utils.h */; };
+		043816A514214CB100974B41 /* getopt.h in Headers */ = {isa = PBXBuildFile; fileRef = 043815FF14214CB100974B41 /* getopt.h */; };
+		043816A614214CB100974B41 /* int64.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438160014214CB100974B41 /* int64.h */; };
+		043816A714214CB100974B41 /* keytools.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438160114214CB100974B41 /* keytools.h */; };
+		043816A814214CB100974B41 /* large_fd_set.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438160214214CB100974B41 /* large_fd_set.h */; };
+		043816A914214CB100974B41 /* lcd_time.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438160314214CB100974B41 /* lcd_time.h */; };
+		043816AA14214CB100974B41 /* md5.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438160414214CB100974B41 /* md5.h */; };
+		043816AB14214CB100974B41 /* mib.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438160514214CB100974B41 /* mib.h */; };
+		043816AC14214CB100974B41 /* mt_support.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438160614214CB100974B41 /* mt_support.h */; };
+		043816AD14214CB100974B41 /* oid.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438160714214CB100974B41 /* oid.h */; };
+		043816AE14214CB100974B41 /* oid_stash.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438160814214CB100974B41 /* oid_stash.h */; };
+		043816AF14214CB100974B41 /* parse.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438160914214CB100974B41 /* parse.h */; };
+		043816B014214CB100974B41 /* read_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438160A14214CB100974B41 /* read_config.h */; };
+		043816B114214CB100974B41 /* scapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438160C14214CB100974B41 /* scapi.h */; };
+		043816B214214CB100974B41 /* snmp-tc.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438160D14214CB100974B41 /* snmp-tc.h */; };
+		043816B314214CB100974B41 /* snmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438160E14214CB100974B41 /* snmp.h */; };
+		043816B414214CB100974B41 /* snmp_alarm.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438160F14214CB100974B41 /* snmp_alarm.h */; };
+		043816B514214CB100974B41 /* snmp_api.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438161014214CB100974B41 /* snmp_api.h */; };
+		043816B614214CB100974B41 /* snmp_assert.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438161114214CB100974B41 /* snmp_assert.h */; };
+		043816B714214CB100974B41 /* snmp_client.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438161214214CB100974B41 /* snmp_client.h */; };
+		043816B814214CB100974B41 /* snmp_debug.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438161314214CB100974B41 /* snmp_debug.h */; };
+		043816B914214CB100974B41 /* snmp_enum.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438161414214CB100974B41 /* snmp_enum.h */; };
+		043816BA14214CB100974B41 /* snmp_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438161514214CB100974B41 /* snmp_impl.h */; };
+		043816BB14214CB100974B41 /* snmp_logging.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438161614214CB100974B41 /* snmp_logging.h */; };
+		043816BC14214CB100974B41 /* snmp_parse_args.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438161714214CB100974B41 /* snmp_parse_args.h */; };
+		043816BD14214CB100974B41 /* snmp_secmod.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438161814214CB100974B41 /* snmp_secmod.h */; };
+		043816BE14214CB100974B41 /* snmp_service.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438161914214CB100974B41 /* snmp_service.h */; };
+		043816BF14214CB100974B41 /* snmp_transport.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438161A14214CB100974B41 /* snmp_transport.h */; };
+		043816C014214CB100974B41 /* snmpAliasDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438161B14214CB100974B41 /* snmpAliasDomain.h */; };
+		043816C114214CB100974B41 /* snmpCallbackDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438161C14214CB100974B41 /* snmpCallbackDomain.h */; };
+		043816C214214CB100974B41 /* snmpIPv4BaseDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438161D14214CB100974B41 /* snmpIPv4BaseDomain.h */; };
+		043816C314214CB100974B41 /* snmpSocketBaseDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438161E14214CB100974B41 /* snmpSocketBaseDomain.h */; };
+		043816C414214CB100974B41 /* snmpTCPBaseDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438161F14214CB100974B41 /* snmpTCPBaseDomain.h */; };
+		043816C514214CB100974B41 /* snmpTCPDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438162014214CB100974B41 /* snmpTCPDomain.h */; };
+		043816C614214CB100974B41 /* snmpUDPBaseDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438162114214CB100974B41 /* snmpUDPBaseDomain.h */; };
+		043816C714214CB100974B41 /* snmpUDPDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438162214214CB100974B41 /* snmpUDPDomain.h */; };
+		043816C814214CB100974B41 /* snmpUDPIPv4BaseDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438162314214CB100974B41 /* snmpUDPIPv4BaseDomain.h */; };
+		043816C914214CB100974B41 /* snmpUnixDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438162414214CB100974B41 /* snmpUnixDomain.h */; };
+		043816CA14214CB100974B41 /* snmpusm.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438162514214CB100974B41 /* snmpusm.h */; };
+		043816CB14214CB100974B41 /* snmpv3-security-includes.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438162614214CB100974B41 /* snmpv3-security-includes.h */; };
+		043816CC14214CB100974B41 /* snmpv3.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438162714214CB100974B41 /* snmpv3.h */; };
+		043816CD14214CB100974B41 /* system.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438162814214CB100974B41 /* system.h */; };
+		043816CE14214CB100974B41 /* text_utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438162914214CB100974B41 /* text_utils.h */; };
+		043816CF14214CB100974B41 /* tools.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438162A14214CB100974B41 /* tools.h */; };
+		043816D014214CB100974B41 /* transform_oids.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438162B14214CB100974B41 /* transform_oids.h */; };
+		043816D114214CB100974B41 /* types.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438162C14214CB100974B41 /* types.h */; };
+		043816D214214CB100974B41 /* ucd_compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438162D14214CB100974B41 /* ucd_compat.h */; };
+		043816D314214CB100974B41 /* vacm.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438162E14214CB100974B41 /* vacm.h */; };
+		043816D414214CB100974B41 /* winpipe.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438162F14214CB100974B41 /* winpipe.h */; };
+		043816D514214CB100974B41 /* winservice.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438163014214CB100974B41 /* winservice.h */; };
+		043816D614214CB100974B41 /* generic.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438163214214CB100974B41 /* generic.h */; };
+		043816D714214CB100974B41 /* mib_api.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438163314214CB100974B41 /* mib_api.h */; };
+		043816D814214CB100974B41 /* net-snmp-config.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438163414214CB100974B41 /* net-snmp-config.h */; };
+		043816D914214CB100974B41 /* net-snmp-includes.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438163514214CB100974B41 /* net-snmp-includes.h */; };
+		043816DA14214CB100974B41 /* output_api.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438163614214CB100974B41 /* output_api.h */; };
+		043816DB14214CB100974B41 /* pdu_api.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438163714214CB100974B41 /* pdu_api.h */; };
+		043816DC14214CB100974B41 /* session_api.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438163814214CB100974B41 /* session_api.h */; };
+		043816DD14214CB100974B41 /* snmpv3_api.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438163914214CB100974B41 /* snmpv3_api.h */; };
+		043816DE14214CB100974B41 /* aix.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438163B14214CB100974B41 /* aix.h */; };
+		043816DF14214CB100974B41 /* bsd.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438163C14214CB100974B41 /* bsd.h */; };
+		043816E014214CB100974B41 /* bsdi.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438163D14214CB100974B41 /* bsdi.h */; };
+		043816E114214CB100974B41 /* bsdi3.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438163E14214CB100974B41 /* bsdi3.h */; };
+		043816E214214CB100974B41 /* bsdi4.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438163F14214CB100974B41 /* bsdi4.h */; };
+		043816E314214CB100974B41 /* cygwin.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438164014214CB100974B41 /* cygwin.h */; };
+		043816E414214CB100974B41 /* darwin.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438164114214CB100974B41 /* darwin.h */; };
+		043816E514214CB100974B41 /* darwin10.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438164214214CB100974B41 /* darwin10.h */; };
+		043816E614214CB100974B41 /* darwin7.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438164314214CB100974B41 /* darwin7.h */; };
+		043816E714214CB100974B41 /* darwin8.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438164414214CB100974B41 /* darwin8.h */; };
+		043816E814214CB100974B41 /* darwin9.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438164514214CB100974B41 /* darwin9.h */; };
+		043816E914214CB100974B41 /* dragonfly.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438164614214CB100974B41 /* dragonfly.h */; };
+		043816EA14214CB100974B41 /* dynix.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438164714214CB100974B41 /* dynix.h */; };
+		043816EB14214CB100974B41 /* freebsd.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438164814214CB100974B41 /* freebsd.h */; };
+		043816EC14214CB100974B41 /* freebsd2.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438164914214CB100974B41 /* freebsd2.h */; };
+		043816ED14214CB100974B41 /* freebsd3.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438164A14214CB100974B41 /* freebsd3.h */; };
+		043816EE14214CB100974B41 /* freebsd4.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438164B14214CB100974B41 /* freebsd4.h */; };
+		043816EF14214CB100974B41 /* freebsd5.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438164C14214CB100974B41 /* freebsd5.h */; };
+		043816F014214CB100974B41 /* freebsd6.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438164D14214CB100974B41 /* freebsd6.h */; };
+		043816F114214CB100974B41 /* generic.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438164E14214CB100974B41 /* generic.h */; };
+		043816F214214CB100974B41 /* hpux.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438164F14214CB100974B41 /* hpux.h */; };
+		043816F314214CB100974B41 /* irix.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438165014214CB100974B41 /* irix.h */; };
+		043816F414214CB100974B41 /* linux.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438165114214CB100974B41 /* linux.h */; };
+		043816F514214CB100974B41 /* mingw32.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438165214214CB100974B41 /* mingw32.h */; };
+		043816F614214CB100974B41 /* mips.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438165314214CB100974B41 /* mips.h */; };
+		043816F714214CB100974B41 /* netbsd.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438165414214CB100974B41 /* netbsd.h */; };
+		043816F814214CB100974B41 /* openbsd.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438165514214CB100974B41 /* openbsd.h */; };
+		043816F914214CB100974B41 /* osf5.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438165614214CB100974B41 /* osf5.h */; };
+		043816FA14214CB100974B41 /* solaris.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438165714214CB100974B41 /* solaris.h */; };
+		043816FB14214CB100974B41 /* solaris2.3.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438165814214CB100974B41 /* solaris2.3.h */; };
+		043816FC14214CB100974B41 /* solaris2.4.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438165914214CB100974B41 /* solaris2.4.h */; };
+		043816FD14214CB100974B41 /* solaris2.5.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438165A14214CB100974B41 /* solaris2.5.h */; };
+		043816FE14214CB100974B41 /* solaris2.6.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438165B14214CB100974B41 /* solaris2.6.h */; };
+		043816FF14214CB100974B41 /* sunos.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438165C14214CB100974B41 /* sunos.h */; };
+		0438170014214CB100974B41 /* svr5.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438165D14214CB100974B41 /* svr5.h */; };
+		0438170114214CB100974B41 /* sysv.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438165E14214CB100974B41 /* sysv.h */; };
+		0438170214214CB100974B41 /* ultrix4.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438165F14214CB100974B41 /* ultrix4.h */; };
+		0438170314214CB100974B41 /* types.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438166014214CB100974B41 /* types.h */; };
+		0438170414214CB100974B41 /* utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438166114214CB100974B41 /* utilities.h */; };
+		0438170514214CB100974B41 /* varbind_api.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438166214214CB100974B41 /* varbind_api.h */; };
+		0438170614214CB100974B41 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438166314214CB100974B41 /* version.h */; };
+		24DD6CF91134B3F500162E58 /* NetfunctionalSnmpModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DD6CF71134B3F500162E58 /* NetfunctionalSnmpModule.h */; };
+		24DD6CFA1134B3F500162E58 /* NetfunctionalSnmpModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* NetfunctionalSnmpModule.m */; };
+		24DE9E1111C5FE74003F90F6 /* NetfunctionalSnmpModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* NetfunctionalSnmpModuleAssets.h */; };
+		24DE9E1211C5FE74003F90F6 /* NetfunctionalSnmpModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* NetfunctionalSnmpModuleAssets.m */; };
+		AA747D9F0F9514B9006C5449 /* NetfunctionalSnmp_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* NetfunctionalSnmp_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24416B8411C4CA280047AFDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = netfunctional_snmp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		043815A814214C3B00974B41 /* NetfunctionalSnmpSnmpClientProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetfunctionalSnmpSnmpClientProxy.h; sourceTree = "<group>"; };
+		043815A914214C3B00974B41 /* NetfunctionalSnmpSnmpClientProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetfunctionalSnmpSnmpClientProxy.m; sourceTree = "<group>"; };
+		043815AD14214C9400974B41 /* netsnmp_adapter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = netsnmp_adapter.c; sourceTree = "<group>"; };
+		043815B014214CAC00974B41 /* libnetsnmp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libnetsnmp.a; sourceTree = "<group>"; };
+		043815B114214CAC00974B41 /* libnetsnmpagent.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libnetsnmpagent.a; sourceTree = "<group>"; };
+		043815B214214CAC00974B41 /* libnetsnmphelpers.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libnetsnmphelpers.a; sourceTree = "<group>"; };
+		043815B314214CAC00974B41 /* libnetsnmpmibs.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libnetsnmpmibs.a; sourceTree = "<group>"; };
+		043815B414214CAC00974B41 /* libnetsnmptrapd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libnetsnmptrapd.a; sourceTree = "<group>"; };
+		043815BD14214CB100974B41 /* agent_callbacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = agent_callbacks.h; sourceTree = "<group>"; };
+		043815BE14214CB100974B41 /* agent_handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = agent_handler.h; sourceTree = "<group>"; };
+		043815BF14214CB100974B41 /* agent_index.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = agent_index.h; sourceTree = "<group>"; };
+		043815C014214CB100974B41 /* agent_module_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = agent_module_config.h; sourceTree = "<group>"; };
+		043815C114214CB100974B41 /* agent_read_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = agent_read_config.h; sourceTree = "<group>"; };
+		043815C214214CB100974B41 /* agent_registry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = agent_registry.h; sourceTree = "<group>"; };
+		043815C314214CB100974B41 /* agent_sysORTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = agent_sysORTable.h; sourceTree = "<group>"; };
+		043815C414214CB100974B41 /* agent_trap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = agent_trap.h; sourceTree = "<group>"; };
+		043815C514214CB100974B41 /* all_helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = all_helpers.h; sourceTree = "<group>"; };
+		043815C614214CB100974B41 /* auto_nlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = auto_nlist.h; sourceTree = "<group>"; };
+		043815C714214CB100974B41 /* baby_steps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baby_steps.h; sourceTree = "<group>"; };
+		043815C814214CB100974B41 /* bulk_to_next.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bulk_to_next.h; sourceTree = "<group>"; };
+		043815C914214CB100974B41 /* cache_handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cache_handler.h; sourceTree = "<group>"; };
+		043815CA14214CB100974B41 /* debug_handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = debug_handler.h; sourceTree = "<group>"; };
+		043815CB14214CB100974B41 /* ds_agent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ds_agent.h; sourceTree = "<group>"; };
+		043815CC14214CB100974B41 /* instance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = instance.h; sourceTree = "<group>"; };
+		043815CD14214CB100974B41 /* mfd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mfd.h; sourceTree = "<group>"; };
+		043815CE14214CB100974B41 /* mib_module_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mib_module_config.h; sourceTree = "<group>"; };
+		043815CF14214CB100974B41 /* mib_module_includes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mib_module_includes.h; sourceTree = "<group>"; };
+		043815D014214CB100974B41 /* mib_modules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mib_modules.h; sourceTree = "<group>"; };
+		043815D114214CB100974B41 /* mode_end_call.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mode_end_call.h; sourceTree = "<group>"; };
+		043815D214214CB100974B41 /* multiplexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = multiplexer.h; sourceTree = "<group>"; };
+		043815D314214CB100974B41 /* net-snmp-agent-includes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "net-snmp-agent-includes.h"; sourceTree = "<group>"; };
+		043815D414214CB100974B41 /* null.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = null.h; sourceTree = "<group>"; };
+		043815D514214CB100974B41 /* old_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = old_api.h; sourceTree = "<group>"; };
+		043815D614214CB100974B41 /* read_only.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = read_only.h; sourceTree = "<group>"; };
+		043815D714214CB100974B41 /* row_merge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = row_merge.h; sourceTree = "<group>"; };
+		043815D814214CB100974B41 /* scalar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scalar.h; sourceTree = "<group>"; };
+		043815D914214CB100974B41 /* scalar_group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scalar_group.h; sourceTree = "<group>"; };
+		043815DA14214CB100974B41 /* serialize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = serialize.h; sourceTree = "<group>"; };
+		043815DB14214CB100974B41 /* set_helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = set_helper.h; sourceTree = "<group>"; };
+		043815DC14214CB100974B41 /* snmp_agent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmp_agent.h; sourceTree = "<group>"; };
+		043815DD14214CB100974B41 /* snmp_get_statistic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmp_get_statistic.h; sourceTree = "<group>"; };
+		043815DE14214CB100974B41 /* snmp_vars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmp_vars.h; sourceTree = "<group>"; };
+		043815DF14214CB100974B41 /* stash_cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stash_cache.h; sourceTree = "<group>"; };
+		043815E014214CB100974B41 /* stash_to_next.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stash_to_next.h; sourceTree = "<group>"; };
+		043815E114214CB100974B41 /* sysORTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sysORTable.h; sourceTree = "<group>"; };
+		043815E214214CB100974B41 /* table.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = table.h; sourceTree = "<group>"; };
+		043815E314214CB100974B41 /* table_array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = table_array.h; sourceTree = "<group>"; };
+		043815E414214CB100974B41 /* table_container.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = table_container.h; sourceTree = "<group>"; };
+		043815E514214CB100974B41 /* table_data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = table_data.h; sourceTree = "<group>"; };
+		043815E614214CB100974B41 /* table_dataset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = table_dataset.h; sourceTree = "<group>"; };
+		043815E714214CB100974B41 /* table_iterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = table_iterator.h; sourceTree = "<group>"; };
+		043815E814214CB100974B41 /* table_tdata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = table_tdata.h; sourceTree = "<group>"; };
+		043815E914214CB100974B41 /* util_funcs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util_funcs.h; sourceTree = "<group>"; };
+		043815EA14214CB100974B41 /* var_struct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = var_struct.h; sourceTree = "<group>"; };
+		043815EB14214CB100974B41 /* watcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = watcher.h; sourceTree = "<group>"; };
+		043815EC14214CB100974B41 /* config_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config_api.h; sourceTree = "<group>"; };
+		043815ED14214CB100974B41 /* definitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = definitions.h; sourceTree = "<group>"; };
+		043815EF14214CB100974B41 /* asn1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1.h; sourceTree = "<group>"; };
+		043815F014214CB100974B41 /* callback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = callback.h; sourceTree = "<group>"; };
+		043815F114214CB100974B41 /* cert_util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cert_util.h; sourceTree = "<group>"; };
+		043815F214214CB100974B41 /* check_varbind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = check_varbind.h; sourceTree = "<group>"; };
+		043815F314214CB100974B41 /* cmu_compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmu_compat.h; sourceTree = "<group>"; };
+		043815F414214CB100974B41 /* container.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = container.h; sourceTree = "<group>"; };
+		043815F514214CB100974B41 /* container_binary_array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = container_binary_array.h; sourceTree = "<group>"; };
+		043815F614214CB100974B41 /* container_iterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = container_iterator.h; sourceTree = "<group>"; };
+		043815F714214CB100974B41 /* container_list_ssll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = container_list_ssll.h; sourceTree = "<group>"; };
+		043815F814214CB100974B41 /* container_null.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = container_null.h; sourceTree = "<group>"; };
+		043815F914214CB100974B41 /* data_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = data_list.h; sourceTree = "<group>"; };
+		043815FA14214CB100974B41 /* default_store.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = default_store.h; sourceTree = "<group>"; };
+		043815FB14214CB100974B41 /* dir_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dir_utils.h; sourceTree = "<group>"; };
+		043815FC14214CB100974B41 /* factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = factory.h; sourceTree = "<group>"; };
+		043815FD14214CB100974B41 /* fd_event_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fd_event_manager.h; sourceTree = "<group>"; };
+		043815FE14214CB100974B41 /* file_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = file_utils.h; sourceTree = "<group>"; };
+		043815FF14214CB100974B41 /* getopt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = getopt.h; sourceTree = "<group>"; };
+		0438160014214CB100974B41 /* int64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = int64.h; sourceTree = "<group>"; };
+		0438160114214CB100974B41 /* keytools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keytools.h; sourceTree = "<group>"; };
+		0438160214214CB100974B41 /* large_fd_set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = large_fd_set.h; sourceTree = "<group>"; };
+		0438160314214CB100974B41 /* lcd_time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lcd_time.h; sourceTree = "<group>"; };
+		0438160414214CB100974B41 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
+		0438160514214CB100974B41 /* mib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mib.h; sourceTree = "<group>"; };
+		0438160614214CB100974B41 /* mt_support.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mt_support.h; sourceTree = "<group>"; };
+		0438160714214CB100974B41 /* oid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oid.h; sourceTree = "<group>"; };
+		0438160814214CB100974B41 /* oid_stash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oid_stash.h; sourceTree = "<group>"; };
+		0438160914214CB100974B41 /* parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parse.h; sourceTree = "<group>"; };
+		0438160A14214CB100974B41 /* read_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = read_config.h; sourceTree = "<group>"; };
+		0438160B14214CB100974B41 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		0438160C14214CB100974B41 /* scapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scapi.h; sourceTree = "<group>"; };
+		0438160D14214CB100974B41 /* snmp-tc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "snmp-tc.h"; sourceTree = "<group>"; };
+		0438160E14214CB100974B41 /* snmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmp.h; sourceTree = "<group>"; };
+		0438160F14214CB100974B41 /* snmp_alarm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmp_alarm.h; sourceTree = "<group>"; };
+		0438161014214CB100974B41 /* snmp_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmp_api.h; sourceTree = "<group>"; };
+		0438161114214CB100974B41 /* snmp_assert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmp_assert.h; sourceTree = "<group>"; };
+		0438161214214CB100974B41 /* snmp_client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmp_client.h; sourceTree = "<group>"; };
+		0438161314214CB100974B41 /* snmp_debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmp_debug.h; sourceTree = "<group>"; };
+		0438161414214CB100974B41 /* snmp_enum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmp_enum.h; sourceTree = "<group>"; };
+		0438161514214CB100974B41 /* snmp_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmp_impl.h; sourceTree = "<group>"; };
+		0438161614214CB100974B41 /* snmp_logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmp_logging.h; sourceTree = "<group>"; };
+		0438161714214CB100974B41 /* snmp_parse_args.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmp_parse_args.h; sourceTree = "<group>"; };
+		0438161814214CB100974B41 /* snmp_secmod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmp_secmod.h; sourceTree = "<group>"; };
+		0438161914214CB100974B41 /* snmp_service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmp_service.h; sourceTree = "<group>"; };
+		0438161A14214CB100974B41 /* snmp_transport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmp_transport.h; sourceTree = "<group>"; };
+		0438161B14214CB100974B41 /* snmpAliasDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmpAliasDomain.h; sourceTree = "<group>"; };
+		0438161C14214CB100974B41 /* snmpCallbackDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmpCallbackDomain.h; sourceTree = "<group>"; };
+		0438161D14214CB100974B41 /* snmpIPv4BaseDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmpIPv4BaseDomain.h; sourceTree = "<group>"; };
+		0438161E14214CB100974B41 /* snmpSocketBaseDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmpSocketBaseDomain.h; sourceTree = "<group>"; };
+		0438161F14214CB100974B41 /* snmpTCPBaseDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmpTCPBaseDomain.h; sourceTree = "<group>"; };
+		0438162014214CB100974B41 /* snmpTCPDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmpTCPDomain.h; sourceTree = "<group>"; };
+		0438162114214CB100974B41 /* snmpUDPBaseDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmpUDPBaseDomain.h; sourceTree = "<group>"; };
+		0438162214214CB100974B41 /* snmpUDPDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmpUDPDomain.h; sourceTree = "<group>"; };
+		0438162314214CB100974B41 /* snmpUDPIPv4BaseDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmpUDPIPv4BaseDomain.h; sourceTree = "<group>"; };
+		0438162414214CB100974B41 /* snmpUnixDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmpUnixDomain.h; sourceTree = "<group>"; };
+		0438162514214CB100974B41 /* snmpusm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmpusm.h; sourceTree = "<group>"; };
+		0438162614214CB100974B41 /* snmpv3-security-includes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "snmpv3-security-includes.h"; sourceTree = "<group>"; };
+		0438162714214CB100974B41 /* snmpv3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmpv3.h; sourceTree = "<group>"; };
+		0438162814214CB100974B41 /* system.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = system.h; sourceTree = "<group>"; };
+		0438162914214CB100974B41 /* text_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = text_utils.h; sourceTree = "<group>"; };
+		0438162A14214CB100974B41 /* tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tools.h; sourceTree = "<group>"; };
+		0438162B14214CB100974B41 /* transform_oids.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = transform_oids.h; sourceTree = "<group>"; };
+		0438162C14214CB100974B41 /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		0438162D14214CB100974B41 /* ucd_compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ucd_compat.h; sourceTree = "<group>"; };
+		0438162E14214CB100974B41 /* vacm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vacm.h; sourceTree = "<group>"; };
+		0438162F14214CB100974B41 /* winpipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = winpipe.h; sourceTree = "<group>"; };
+		0438163014214CB100974B41 /* winservice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = winservice.h; sourceTree = "<group>"; };
+		0438163214214CB100974B41 /* generic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = generic.h; sourceTree = "<group>"; };
+		0438163314214CB100974B41 /* mib_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mib_api.h; sourceTree = "<group>"; };
+		0438163414214CB100974B41 /* net-snmp-config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "net-snmp-config.h"; sourceTree = "<group>"; };
+		0438163514214CB100974B41 /* net-snmp-includes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "net-snmp-includes.h"; sourceTree = "<group>"; };
+		0438163614214CB100974B41 /* output_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = output_api.h; sourceTree = "<group>"; };
+		0438163714214CB100974B41 /* pdu_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pdu_api.h; sourceTree = "<group>"; };
+		0438163814214CB100974B41 /* session_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = session_api.h; sourceTree = "<group>"; };
+		0438163914214CB100974B41 /* snmpv3_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmpv3_api.h; sourceTree = "<group>"; };
+		0438163B14214CB100974B41 /* aix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aix.h; sourceTree = "<group>"; };
+		0438163C14214CB100974B41 /* bsd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bsd.h; sourceTree = "<group>"; };
+		0438163D14214CB100974B41 /* bsdi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bsdi.h; sourceTree = "<group>"; };
+		0438163E14214CB100974B41 /* bsdi3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bsdi3.h; sourceTree = "<group>"; };
+		0438163F14214CB100974B41 /* bsdi4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bsdi4.h; sourceTree = "<group>"; };
+		0438164014214CB100974B41 /* cygwin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cygwin.h; sourceTree = "<group>"; };
+		0438164114214CB100974B41 /* darwin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = darwin.h; sourceTree = "<group>"; };
+		0438164214214CB100974B41 /* darwin10.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = darwin10.h; sourceTree = "<group>"; };
+		0438164314214CB100974B41 /* darwin7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = darwin7.h; sourceTree = "<group>"; };
+		0438164414214CB100974B41 /* darwin8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = darwin8.h; sourceTree = "<group>"; };
+		0438164514214CB100974B41 /* darwin9.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = darwin9.h; sourceTree = "<group>"; };
+		0438164614214CB100974B41 /* dragonfly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dragonfly.h; sourceTree = "<group>"; };
+		0438164714214CB100974B41 /* dynix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dynix.h; sourceTree = "<group>"; };
+		0438164814214CB100974B41 /* freebsd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = freebsd.h; sourceTree = "<group>"; };
+		0438164914214CB100974B41 /* freebsd2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = freebsd2.h; sourceTree = "<group>"; };
+		0438164A14214CB100974B41 /* freebsd3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = freebsd3.h; sourceTree = "<group>"; };
+		0438164B14214CB100974B41 /* freebsd4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = freebsd4.h; sourceTree = "<group>"; };
+		0438164C14214CB100974B41 /* freebsd5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = freebsd5.h; sourceTree = "<group>"; };
+		0438164D14214CB100974B41 /* freebsd6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = freebsd6.h; sourceTree = "<group>"; };
+		0438164E14214CB100974B41 /* generic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = generic.h; sourceTree = "<group>"; };
+		0438164F14214CB100974B41 /* hpux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hpux.h; sourceTree = "<group>"; };
+		0438165014214CB100974B41 /* irix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = irix.h; sourceTree = "<group>"; };
+		0438165114214CB100974B41 /* linux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = linux.h; sourceTree = "<group>"; };
+		0438165214214CB100974B41 /* mingw32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mingw32.h; sourceTree = "<group>"; };
+		0438165314214CB100974B41 /* mips.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mips.h; sourceTree = "<group>"; };
+		0438165414214CB100974B41 /* netbsd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = netbsd.h; sourceTree = "<group>"; };
+		0438165514214CB100974B41 /* openbsd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = openbsd.h; sourceTree = "<group>"; };
+		0438165614214CB100974B41 /* osf5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = osf5.h; sourceTree = "<group>"; };
+		0438165714214CB100974B41 /* solaris.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = solaris.h; sourceTree = "<group>"; };
+		0438165814214CB100974B41 /* solaris2.3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = solaris2.3.h; sourceTree = "<group>"; };
+		0438165914214CB100974B41 /* solaris2.4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = solaris2.4.h; sourceTree = "<group>"; };
+		0438165A14214CB100974B41 /* solaris2.5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = solaris2.5.h; sourceTree = "<group>"; };
+		0438165B14214CB100974B41 /* solaris2.6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = solaris2.6.h; sourceTree = "<group>"; };
+		0438165C14214CB100974B41 /* sunos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sunos.h; sourceTree = "<group>"; };
+		0438165D14214CB100974B41 /* svr5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = svr5.h; sourceTree = "<group>"; };
+		0438165E14214CB100974B41 /* sysv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sysv.h; sourceTree = "<group>"; };
+		0438165F14214CB100974B41 /* ultrix4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ultrix4.h; sourceTree = "<group>"; };
+		0438166014214CB100974B41 /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		0438166114214CB100974B41 /* utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utilities.h; sourceTree = "<group>"; };
+		0438166214214CB100974B41 /* varbind_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = varbind_api.h; sourceTree = "<group>"; };
+		0438166314214CB100974B41 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		24DD6CF71134B3F500162E58 /* NetfunctionalSnmpModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetfunctionalSnmpModule.h; path = Classes/NetfunctionalSnmpModule.h; sourceTree = "<group>"; };
+		24DD6CF81134B3F500162E58 /* NetfunctionalSnmpModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetfunctionalSnmpModule.m; path = Classes/NetfunctionalSnmpModule.m; sourceTree = "<group>"; };
+		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
+		24DE9E0F11C5FE74003F90F6 /* NetfunctionalSnmpModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetfunctionalSnmpModuleAssets.h; path = Classes/NetfunctionalSnmpModuleAssets.h; sourceTree = "<group>"; };
+		24DE9E1011C5FE74003F90F6 /* NetfunctionalSnmpModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetfunctionalSnmpModuleAssets.m; path = Classes/NetfunctionalSnmpModuleAssets.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* NetfunctionalSnmp_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetfunctionalSnmp_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libNetfunctionalSnmp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNetfunctionalSnmp.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+				043815B514214CAC00974B41 /* libnetsnmp.a in Frameworks */,
+				043815B614214CAC00974B41 /* libnetsnmpagent.a in Frameworks */,
+				043815B714214CAC00974B41 /* libnetsnmphelpers.a in Frameworks */,
+				043815B814214CAC00974B41 /* libnetsnmpmibs.a in Frameworks */,
+				043815B914214CAC00974B41 /* libnetsnmptrapd.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libNetfunctionalSnmp.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		043815AF14214CAC00974B41 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				043815B014214CAC00974B41 /* libnetsnmp.a */,
+				043815B114214CAC00974B41 /* libnetsnmpagent.a */,
+				043815B214214CAC00974B41 /* libnetsnmphelpers.a */,
+				043815B314214CAC00974B41 /* libnetsnmpmibs.a */,
+				043815B414214CAC00974B41 /* libnetsnmptrapd.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		043815BA14214CB100974B41 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				043815BB14214CB100974B41 /* net-snmp */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		043815BB14214CB100974B41 /* net-snmp */ = {
+			isa = PBXGroup;
+			children = (
+				043815BC14214CB100974B41 /* agent */,
+				043815EC14214CB100974B41 /* config_api.h */,
+				043815ED14214CB100974B41 /* definitions.h */,
+				043815EE14214CB100974B41 /* library */,
+				0438163114214CB100974B41 /* machine */,
+				0438163314214CB100974B41 /* mib_api.h */,
+				0438163414214CB100974B41 /* net-snmp-config.h */,
+				0438163514214CB100974B41 /* net-snmp-includes.h */,
+				0438163614214CB100974B41 /* output_api.h */,
+				0438163714214CB100974B41 /* pdu_api.h */,
+				0438163814214CB100974B41 /* session_api.h */,
+				0438163914214CB100974B41 /* snmpv3_api.h */,
+				0438163A14214CB100974B41 /* system */,
+				0438166014214CB100974B41 /* types.h */,
+				0438166114214CB100974B41 /* utilities.h */,
+				0438166214214CB100974B41 /* varbind_api.h */,
+				0438166314214CB100974B41 /* version.h */,
+			);
+			path = "net-snmp";
+			sourceTree = "<group>";
+		};
+		043815BC14214CB100974B41 /* agent */ = {
+			isa = PBXGroup;
+			children = (
+				043815BD14214CB100974B41 /* agent_callbacks.h */,
+				043815BE14214CB100974B41 /* agent_handler.h */,
+				043815BF14214CB100974B41 /* agent_index.h */,
+				043815C014214CB100974B41 /* agent_module_config.h */,
+				043815C114214CB100974B41 /* agent_read_config.h */,
+				043815C214214CB100974B41 /* agent_registry.h */,
+				043815C314214CB100974B41 /* agent_sysORTable.h */,
+				043815C414214CB100974B41 /* agent_trap.h */,
+				043815C514214CB100974B41 /* all_helpers.h */,
+				043815C614214CB100974B41 /* auto_nlist.h */,
+				043815C714214CB100974B41 /* baby_steps.h */,
+				043815C814214CB100974B41 /* bulk_to_next.h */,
+				043815C914214CB100974B41 /* cache_handler.h */,
+				043815CA14214CB100974B41 /* debug_handler.h */,
+				043815CB14214CB100974B41 /* ds_agent.h */,
+				043815CC14214CB100974B41 /* instance.h */,
+				043815CD14214CB100974B41 /* mfd.h */,
+				043815CE14214CB100974B41 /* mib_module_config.h */,
+				043815CF14214CB100974B41 /* mib_module_includes.h */,
+				043815D014214CB100974B41 /* mib_modules.h */,
+				043815D114214CB100974B41 /* mode_end_call.h */,
+				043815D214214CB100974B41 /* multiplexer.h */,
+				043815D314214CB100974B41 /* net-snmp-agent-includes.h */,
+				043815D414214CB100974B41 /* null.h */,
+				043815D514214CB100974B41 /* old_api.h */,
+				043815D614214CB100974B41 /* read_only.h */,
+				043815D714214CB100974B41 /* row_merge.h */,
+				043815D814214CB100974B41 /* scalar.h */,
+				043815D914214CB100974B41 /* scalar_group.h */,
+				043815DA14214CB100974B41 /* serialize.h */,
+				043815DB14214CB100974B41 /* set_helper.h */,
+				043815DC14214CB100974B41 /* snmp_agent.h */,
+				043815DD14214CB100974B41 /* snmp_get_statistic.h */,
+				043815DE14214CB100974B41 /* snmp_vars.h */,
+				043815DF14214CB100974B41 /* stash_cache.h */,
+				043815E014214CB100974B41 /* stash_to_next.h */,
+				043815E114214CB100974B41 /* sysORTable.h */,
+				043815E214214CB100974B41 /* table.h */,
+				043815E314214CB100974B41 /* table_array.h */,
+				043815E414214CB100974B41 /* table_container.h */,
+				043815E514214CB100974B41 /* table_data.h */,
+				043815E614214CB100974B41 /* table_dataset.h */,
+				043815E714214CB100974B41 /* table_iterator.h */,
+				043815E814214CB100974B41 /* table_tdata.h */,
+				043815E914214CB100974B41 /* util_funcs.h */,
+				043815EA14214CB100974B41 /* var_struct.h */,
+				043815EB14214CB100974B41 /* watcher.h */,
+			);
+			path = agent;
+			sourceTree = "<group>";
+		};
+		043815EE14214CB100974B41 /* library */ = {
+			isa = PBXGroup;
+			children = (
+				043815EF14214CB100974B41 /* asn1.h */,
+				043815F014214CB100974B41 /* callback.h */,
+				043815F114214CB100974B41 /* cert_util.h */,
+				043815F214214CB100974B41 /* check_varbind.h */,
+				043815F314214CB100974B41 /* cmu_compat.h */,
+				043815F414214CB100974B41 /* container.h */,
+				043815F514214CB100974B41 /* container_binary_array.h */,
+				043815F614214CB100974B41 /* container_iterator.h */,
+				043815F714214CB100974B41 /* container_list_ssll.h */,
+				043815F814214CB100974B41 /* container_null.h */,
+				043815F914214CB100974B41 /* data_list.h */,
+				043815FA14214CB100974B41 /* default_store.h */,
+				043815FB14214CB100974B41 /* dir_utils.h */,
+				043815FC14214CB100974B41 /* factory.h */,
+				043815FD14214CB100974B41 /* fd_event_manager.h */,
+				043815FE14214CB100974B41 /* file_utils.h */,
+				043815FF14214CB100974B41 /* getopt.h */,
+				0438160014214CB100974B41 /* int64.h */,
+				0438160114214CB100974B41 /* keytools.h */,
+				0438160214214CB100974B41 /* large_fd_set.h */,
+				0438160314214CB100974B41 /* lcd_time.h */,
+				0438160414214CB100974B41 /* md5.h */,
+				0438160514214CB100974B41 /* mib.h */,
+				0438160614214CB100974B41 /* mt_support.h */,
+				0438160714214CB100974B41 /* oid.h */,
+				0438160814214CB100974B41 /* oid_stash.h */,
+				0438160914214CB100974B41 /* parse.h */,
+				0438160A14214CB100974B41 /* read_config.h */,
+				0438160B14214CB100974B41 /* README */,
+				0438160C14214CB100974B41 /* scapi.h */,
+				0438160D14214CB100974B41 /* snmp-tc.h */,
+				0438160E14214CB100974B41 /* snmp.h */,
+				0438160F14214CB100974B41 /* snmp_alarm.h */,
+				0438161014214CB100974B41 /* snmp_api.h */,
+				0438161114214CB100974B41 /* snmp_assert.h */,
+				0438161214214CB100974B41 /* snmp_client.h */,
+				0438161314214CB100974B41 /* snmp_debug.h */,
+				0438161414214CB100974B41 /* snmp_enum.h */,
+				0438161514214CB100974B41 /* snmp_impl.h */,
+				0438161614214CB100974B41 /* snmp_logging.h */,
+				0438161714214CB100974B41 /* snmp_parse_args.h */,
+				0438161814214CB100974B41 /* snmp_secmod.h */,
+				0438161914214CB100974B41 /* snmp_service.h */,
+				0438161A14214CB100974B41 /* snmp_transport.h */,
+				0438161B14214CB100974B41 /* snmpAliasDomain.h */,
+				0438161C14214CB100974B41 /* snmpCallbackDomain.h */,
+				0438161D14214CB100974B41 /* snmpIPv4BaseDomain.h */,
+				0438161E14214CB100974B41 /* snmpSocketBaseDomain.h */,
+				0438161F14214CB100974B41 /* snmpTCPBaseDomain.h */,
+				0438162014214CB100974B41 /* snmpTCPDomain.h */,
+				0438162114214CB100974B41 /* snmpUDPBaseDomain.h */,
+				0438162214214CB100974B41 /* snmpUDPDomain.h */,
+				0438162314214CB100974B41 /* snmpUDPIPv4BaseDomain.h */,
+				0438162414214CB100974B41 /* snmpUnixDomain.h */,
+				0438162514214CB100974B41 /* snmpusm.h */,
+				0438162614214CB100974B41 /* snmpv3-security-includes.h */,
+				0438162714214CB100974B41 /* snmpv3.h */,
+				0438162814214CB100974B41 /* system.h */,
+				0438162914214CB100974B41 /* text_utils.h */,
+				0438162A14214CB100974B41 /* tools.h */,
+				0438162B14214CB100974B41 /* transform_oids.h */,
+				0438162C14214CB100974B41 /* types.h */,
+				0438162D14214CB100974B41 /* ucd_compat.h */,
+				0438162E14214CB100974B41 /* vacm.h */,
+				0438162F14214CB100974B41 /* winpipe.h */,
+				0438163014214CB100974B41 /* winservice.h */,
+			);
+			path = library;
+			sourceTree = "<group>";
+		};
+		0438163114214CB100974B41 /* machine */ = {
+			isa = PBXGroup;
+			children = (
+				0438163214214CB100974B41 /* generic.h */,
+			);
+			path = machine;
+			sourceTree = "<group>";
+		};
+		0438163A14214CB100974B41 /* system */ = {
+			isa = PBXGroup;
+			children = (
+				0438163B14214CB100974B41 /* aix.h */,
+				0438163C14214CB100974B41 /* bsd.h */,
+				0438163D14214CB100974B41 /* bsdi.h */,
+				0438163E14214CB100974B41 /* bsdi3.h */,
+				0438163F14214CB100974B41 /* bsdi4.h */,
+				0438164014214CB100974B41 /* cygwin.h */,
+				0438164114214CB100974B41 /* darwin.h */,
+				0438164214214CB100974B41 /* darwin10.h */,
+				0438164314214CB100974B41 /* darwin7.h */,
+				0438164414214CB100974B41 /* darwin8.h */,
+				0438164514214CB100974B41 /* darwin9.h */,
+				0438164614214CB100974B41 /* dragonfly.h */,
+				0438164714214CB100974B41 /* dynix.h */,
+				0438164814214CB100974B41 /* freebsd.h */,
+				0438164914214CB100974B41 /* freebsd2.h */,
+				0438164A14214CB100974B41 /* freebsd3.h */,
+				0438164B14214CB100974B41 /* freebsd4.h */,
+				0438164C14214CB100974B41 /* freebsd5.h */,
+				0438164D14214CB100974B41 /* freebsd6.h */,
+				0438164E14214CB100974B41 /* generic.h */,
+				0438164F14214CB100974B41 /* hpux.h */,
+				0438165014214CB100974B41 /* irix.h */,
+				0438165114214CB100974B41 /* linux.h */,
+				0438165214214CB100974B41 /* mingw32.h */,
+				0438165314214CB100974B41 /* mips.h */,
+				0438165414214CB100974B41 /* netbsd.h */,
+				0438165514214CB100974B41 /* openbsd.h */,
+				0438165614214CB100974B41 /* osf5.h */,
+				0438165714214CB100974B41 /* solaris.h */,
+				0438165814214CB100974B41 /* solaris2.3.h */,
+				0438165914214CB100974B41 /* solaris2.4.h */,
+				0438165A14214CB100974B41 /* solaris2.5.h */,
+				0438165B14214CB100974B41 /* solaris2.6.h */,
+				0438165C14214CB100974B41 /* sunos.h */,
+				0438165D14214CB100974B41 /* svr5.h */,
+				0438165E14214CB100974B41 /* sysv.h */,
+				0438165F14214CB100974B41 /* ultrix4.h */,
+			);
+			path = system;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* netfunctional_snmp */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = netfunctional_snmp;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				043815AD14214C9400974B41 /* netsnmp_adapter.c */,
+				043815BA14214CB100974B41 /* include */,
+				043815AF14214CAC00974B41 /* lib */,
+				24DE9E0F11C5FE74003F90F6 /* NetfunctionalSnmpModuleAssets.h */,
+				24DE9E1011C5FE74003F90F6 /* NetfunctionalSnmpModuleAssets.m */,
+				24DD6CF71134B3F500162E58 /* NetfunctionalSnmpModule.h */,
+				24DD6CF81134B3F500162E58 /* NetfunctionalSnmpModule.m */,
+				043815A814214C3B00974B41 /* NetfunctionalSnmpSnmpClientProxy.h */,
+				043815A914214C3B00974B41 /* NetfunctionalSnmpSnmpClientProxy.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* NetfunctionalSnmp_Prefix.pch */,
+				24DD6D1B1134B66800162E58 /* titanium.xcconfig */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* NetfunctionalSnmp_Prefix.pch in Headers */,
+				24DD6CF91134B3F500162E58 /* NetfunctionalSnmpModule.h in Headers */,
+				24DE9E1111C5FE74003F90F6 /* NetfunctionalSnmpModuleAssets.h in Headers */,
+				043815AA14214C3B00974B41 /* NetfunctionalSnmpSnmpClientProxy.h in Headers */,
+				0438166414214CB100974B41 /* agent_callbacks.h in Headers */,
+				0438166514214CB100974B41 /* agent_handler.h in Headers */,
+				0438166614214CB100974B41 /* agent_index.h in Headers */,
+				0438166714214CB100974B41 /* agent_module_config.h in Headers */,
+				0438166814214CB100974B41 /* agent_read_config.h in Headers */,
+				0438166914214CB100974B41 /* agent_registry.h in Headers */,
+				0438166A14214CB100974B41 /* agent_sysORTable.h in Headers */,
+				0438166B14214CB100974B41 /* agent_trap.h in Headers */,
+				0438166C14214CB100974B41 /* all_helpers.h in Headers */,
+				0438166D14214CB100974B41 /* auto_nlist.h in Headers */,
+				0438166E14214CB100974B41 /* baby_steps.h in Headers */,
+				0438166F14214CB100974B41 /* bulk_to_next.h in Headers */,
+				0438167014214CB100974B41 /* cache_handler.h in Headers */,
+				0438167114214CB100974B41 /* debug_handler.h in Headers */,
+				0438167214214CB100974B41 /* ds_agent.h in Headers */,
+				0438167314214CB100974B41 /* instance.h in Headers */,
+				0438167414214CB100974B41 /* mfd.h in Headers */,
+				0438167514214CB100974B41 /* mib_module_config.h in Headers */,
+				0438167614214CB100974B41 /* mib_module_includes.h in Headers */,
+				0438167714214CB100974B41 /* mib_modules.h in Headers */,
+				0438167814214CB100974B41 /* mode_end_call.h in Headers */,
+				0438167914214CB100974B41 /* multiplexer.h in Headers */,
+				0438167A14214CB100974B41 /* net-snmp-agent-includes.h in Headers */,
+				0438167B14214CB100974B41 /* null.h in Headers */,
+				0438167C14214CB100974B41 /* old_api.h in Headers */,
+				0438167D14214CB100974B41 /* read_only.h in Headers */,
+				0438167E14214CB100974B41 /* row_merge.h in Headers */,
+				0438167F14214CB100974B41 /* scalar.h in Headers */,
+				0438168014214CB100974B41 /* scalar_group.h in Headers */,
+				0438168114214CB100974B41 /* serialize.h in Headers */,
+				0438168214214CB100974B41 /* set_helper.h in Headers */,
+				0438168314214CB100974B41 /* snmp_agent.h in Headers */,
+				0438168414214CB100974B41 /* snmp_get_statistic.h in Headers */,
+				0438168514214CB100974B41 /* snmp_vars.h in Headers */,
+				0438168614214CB100974B41 /* stash_cache.h in Headers */,
+				0438168714214CB100974B41 /* stash_to_next.h in Headers */,
+				0438168814214CB100974B41 /* sysORTable.h in Headers */,
+				0438168914214CB100974B41 /* table.h in Headers */,
+				0438168A14214CB100974B41 /* table_array.h in Headers */,
+				0438168B14214CB100974B41 /* table_container.h in Headers */,
+				0438168C14214CB100974B41 /* table_data.h in Headers */,
+				0438168D14214CB100974B41 /* table_dataset.h in Headers */,
+				0438168E14214CB100974B41 /* table_iterator.h in Headers */,
+				0438168F14214CB100974B41 /* table_tdata.h in Headers */,
+				0438169014214CB100974B41 /* util_funcs.h in Headers */,
+				0438169114214CB100974B41 /* var_struct.h in Headers */,
+				0438169214214CB100974B41 /* watcher.h in Headers */,
+				0438169314214CB100974B41 /* config_api.h in Headers */,
+				0438169414214CB100974B41 /* definitions.h in Headers */,
+				0438169514214CB100974B41 /* asn1.h in Headers */,
+				0438169614214CB100974B41 /* callback.h in Headers */,
+				0438169714214CB100974B41 /* cert_util.h in Headers */,
+				0438169814214CB100974B41 /* check_varbind.h in Headers */,
+				0438169914214CB100974B41 /* cmu_compat.h in Headers */,
+				0438169A14214CB100974B41 /* container.h in Headers */,
+				0438169B14214CB100974B41 /* container_binary_array.h in Headers */,
+				0438169C14214CB100974B41 /* container_iterator.h in Headers */,
+				0438169D14214CB100974B41 /* container_list_ssll.h in Headers */,
+				0438169E14214CB100974B41 /* container_null.h in Headers */,
+				0438169F14214CB100974B41 /* data_list.h in Headers */,
+				043816A014214CB100974B41 /* default_store.h in Headers */,
+				043816A114214CB100974B41 /* dir_utils.h in Headers */,
+				043816A214214CB100974B41 /* factory.h in Headers */,
+				043816A314214CB100974B41 /* fd_event_manager.h in Headers */,
+				043816A414214CB100974B41 /* file_utils.h in Headers */,
+				043816A514214CB100974B41 /* getopt.h in Headers */,
+				043816A614214CB100974B41 /* int64.h in Headers */,
+				043816A714214CB100974B41 /* keytools.h in Headers */,
+				043816A814214CB100974B41 /* large_fd_set.h in Headers */,
+				043816A914214CB100974B41 /* lcd_time.h in Headers */,
+				043816AA14214CB100974B41 /* md5.h in Headers */,
+				043816AB14214CB100974B41 /* mib.h in Headers */,
+				043816AC14214CB100974B41 /* mt_support.h in Headers */,
+				043816AD14214CB100974B41 /* oid.h in Headers */,
+				043816AE14214CB100974B41 /* oid_stash.h in Headers */,
+				043816AF14214CB100974B41 /* parse.h in Headers */,
+				043816B014214CB100974B41 /* read_config.h in Headers */,
+				043816B114214CB100974B41 /* scapi.h in Headers */,
+				043816B214214CB100974B41 /* snmp-tc.h in Headers */,
+				043816B314214CB100974B41 /* snmp.h in Headers */,
+				043816B414214CB100974B41 /* snmp_alarm.h in Headers */,
+				043816B514214CB100974B41 /* snmp_api.h in Headers */,
+				043816B614214CB100974B41 /* snmp_assert.h in Headers */,
+				043816B714214CB100974B41 /* snmp_client.h in Headers */,
+				043816B814214CB100974B41 /* snmp_debug.h in Headers */,
+				043816B914214CB100974B41 /* snmp_enum.h in Headers */,
+				043816BA14214CB100974B41 /* snmp_impl.h in Headers */,
+				043816BB14214CB100974B41 /* snmp_logging.h in Headers */,
+				043816BC14214CB100974B41 /* snmp_parse_args.h in Headers */,
+				043816BD14214CB100974B41 /* snmp_secmod.h in Headers */,
+				043816BE14214CB100974B41 /* snmp_service.h in Headers */,
+				043816BF14214CB100974B41 /* snmp_transport.h in Headers */,
+				043816C014214CB100974B41 /* snmpAliasDomain.h in Headers */,
+				043816C114214CB100974B41 /* snmpCallbackDomain.h in Headers */,
+				043816C214214CB100974B41 /* snmpIPv4BaseDomain.h in Headers */,
+				043816C314214CB100974B41 /* snmpSocketBaseDomain.h in Headers */,
+				043816C414214CB100974B41 /* snmpTCPBaseDomain.h in Headers */,
+				043816C514214CB100974B41 /* snmpTCPDomain.h in Headers */,
+				043816C614214CB100974B41 /* snmpUDPBaseDomain.h in Headers */,
+				043816C714214CB100974B41 /* snmpUDPDomain.h in Headers */,
+				043816C814214CB100974B41 /* snmpUDPIPv4BaseDomain.h in Headers */,
+				043816C914214CB100974B41 /* snmpUnixDomain.h in Headers */,
+				043816CA14214CB100974B41 /* snmpusm.h in Headers */,
+				043816CB14214CB100974B41 /* snmpv3-security-includes.h in Headers */,
+				043816CC14214CB100974B41 /* snmpv3.h in Headers */,
+				043816CD14214CB100974B41 /* system.h in Headers */,
+				043816CE14214CB100974B41 /* text_utils.h in Headers */,
+				043816CF14214CB100974B41 /* tools.h in Headers */,
+				043816D014214CB100974B41 /* transform_oids.h in Headers */,
+				043816D114214CB100974B41 /* types.h in Headers */,
+				043816D214214CB100974B41 /* ucd_compat.h in Headers */,
+				043816D314214CB100974B41 /* vacm.h in Headers */,
+				043816D414214CB100974B41 /* winpipe.h in Headers */,
+				043816D514214CB100974B41 /* winservice.h in Headers */,
+				043816D614214CB100974B41 /* generic.h in Headers */,
+				043816D714214CB100974B41 /* mib_api.h in Headers */,
+				043816D814214CB100974B41 /* net-snmp-config.h in Headers */,
+				043816D914214CB100974B41 /* net-snmp-includes.h in Headers */,
+				043816DA14214CB100974B41 /* output_api.h in Headers */,
+				043816DB14214CB100974B41 /* pdu_api.h in Headers */,
+				043816DC14214CB100974B41 /* session_api.h in Headers */,
+				043816DD14214CB100974B41 /* snmpv3_api.h in Headers */,
+				043816DE14214CB100974B41 /* aix.h in Headers */,
+				043816DF14214CB100974B41 /* bsd.h in Headers */,
+				043816E014214CB100974B41 /* bsdi.h in Headers */,
+				043816E114214CB100974B41 /* bsdi3.h in Headers */,
+				043816E214214CB100974B41 /* bsdi4.h in Headers */,
+				043816E314214CB100974B41 /* cygwin.h in Headers */,
+				043816E414214CB100974B41 /* darwin.h in Headers */,
+				043816E514214CB100974B41 /* darwin10.h in Headers */,
+				043816E614214CB100974B41 /* darwin7.h in Headers */,
+				043816E714214CB100974B41 /* darwin8.h in Headers */,
+				043816E814214CB100974B41 /* darwin9.h in Headers */,
+				043816E914214CB100974B41 /* dragonfly.h in Headers */,
+				043816EA14214CB100974B41 /* dynix.h in Headers */,
+				043816EB14214CB100974B41 /* freebsd.h in Headers */,
+				043816EC14214CB100974B41 /* freebsd2.h in Headers */,
+				043816ED14214CB100974B41 /* freebsd3.h in Headers */,
+				043816EE14214CB100974B41 /* freebsd4.h in Headers */,
+				043816EF14214CB100974B41 /* freebsd5.h in Headers */,
+				043816F014214CB100974B41 /* freebsd6.h in Headers */,
+				043816F114214CB100974B41 /* generic.h in Headers */,
+				043816F214214CB100974B41 /* hpux.h in Headers */,
+				043816F314214CB100974B41 /* irix.h in Headers */,
+				043816F414214CB100974B41 /* linux.h in Headers */,
+				043816F514214CB100974B41 /* mingw32.h in Headers */,
+				043816F614214CB100974B41 /* mips.h in Headers */,
+				043816F714214CB100974B41 /* netbsd.h in Headers */,
+				043816F814214CB100974B41 /* openbsd.h in Headers */,
+				043816F914214CB100974B41 /* osf5.h in Headers */,
+				043816FA14214CB100974B41 /* solaris.h in Headers */,
+				043816FB14214CB100974B41 /* solaris2.3.h in Headers */,
+				043816FC14214CB100974B41 /* solaris2.4.h in Headers */,
+				043816FD14214CB100974B41 /* solaris2.5.h in Headers */,
+				043816FE14214CB100974B41 /* solaris2.6.h in Headers */,
+				043816FF14214CB100974B41 /* sunos.h in Headers */,
+				0438170014214CB100974B41 /* svr5.h in Headers */,
+				0438170114214CB100974B41 /* sysv.h in Headers */,
+				0438170214214CB100974B41 /* ultrix4.h in Headers */,
+				0438170314214CB100974B41 /* types.h in Headers */,
+				0438170414214CB100974B41 /* utilities.h in Headers */,
+				0438170514214CB100974B41 /* varbind_api.h in Headers */,
+				0438170614214CB100974B41 /* version.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* netfunctional_snmp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "netfunctional_snmp" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = netfunctional_snmp;
+			productName = netfunctional_snmp;
+			productReference = D2AAC07E0554694100DB518D /* libNetfunctionalSnmp.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+			};
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "netfunctional_snmp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* netfunctional_snmp */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* netfunctional_snmp */,
+				24416B8111C4CA220047AFDD /* Build & Test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24416B8011C4CA220047AFDD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here\n\npython \"${TITANIUM_SDK}/titanium.py\" run --dir=\"${PROJECT_DIR}\"\nexit $?\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24DD6CFA1134B3F500162E58 /* NetfunctionalSnmpModule.m in Sources */,
+				24DE9E1211C5FE74003F90F6 /* NetfunctionalSnmpModuleAssets.m in Sources */,
+				043815AB14214C3B00974B41 /* NetfunctionalSnmpSnmpClientProxy.m in Sources */,
+				043815AE14214C9400974B41 /* netsnmp_adapter.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24416B8511C4CA280047AFDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC07D0554694100DB518D /* netfunctional_snmp */;
+			targetProxy = 24416B8411C4CA280047AFDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/NetfunctionalSnmp.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = NetfunctionalSnmp_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"$(TITANIUM_BASE_SDK)",
+					"$(TITANIUM_BASE_SDK2)",
+					"\"$(SRCROOT)/include\"",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/lib\"",
+				);
+				PRODUCT_NAME = NetfunctionalSnmp;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv6 armv7 i386";
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/NetfunctionalSnmp.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = NetfunctionalSnmp_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"$(TITANIUM_BASE_SDK)",
+					"$(TITANIUM_BASE_SDK2)",
+					"\"$(SRCROOT)/include\"",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/lib\"",
+				);
+				PRODUCT_NAME = NetfunctionalSnmp;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv6 armv7 i386";
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		24416B8211C4CA220047AFDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				PRODUCT_NAME = "Build & test";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		24416B8311C4CA220047AFDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				PRODUCT_NAME = "Build & test";
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "netfunctional_snmp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "netfunctional_snmp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24416B8A11C4CA520047AFDD /* Build configuration list for PBXAggregateTarget "Build & Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24416B8211C4CA220047AFDD /* Debug */,
+				24416B8311C4CA220047AFDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
